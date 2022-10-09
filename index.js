@@ -47,10 +47,10 @@ inputCardNumber.addEventListener('input', function (e) {
  });
 
 $(document).ready(function () {
-   $('.sucessfulConfirmation').hide;
+   $('.sucessfulConfirmation').hide();
 })
 
 $('.submit').on('click', function () {
-   $('.sucessfulConfirmation').show();
    $('.PaymentInformation').hide();
+   $('.sucessfulConfirmation').show();
 }) 
