@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- START OF GOOGLE FONTS -->
@@ -19,7 +19,7 @@
 <main>
   <section class="bgholder" >
     <picture>
-      <source media="(max-width: 780px)" src="images/bg-main-mobile.png">
+      <source media="(max-width: 780px)" srcset="images/bg-main-mobile.png">
       <img class="bgpicture" src="images/bg-main-desktop.png" alt="bgpicture">
     </picture>
 
@@ -35,13 +35,13 @@
     </div>
   </section>
 
-  <section class="cardBackHolder">
+  <div class="cardBackHolder">
     <picture>
       <img class="card-back" src="images/bg-card-back.png" alt="back-card">
     </picture>
     <p class="displayCVC">000</p>
 
-  </section>
+  </div>
   
   <section class="PaymentInformation">
     
