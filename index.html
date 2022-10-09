@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- START OF GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <!-- END OF GOOGLE FONTS -->
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+
+<main role="MainSectionHlder">
+  <section class="bgholder" role="bg-holder">
+    <picture>
+      <source media="(max-width: 780px)" srcset="images\bg-main-mobile.png">
+      <img class="bgpicture" src="images\bg-main-desktop.png" alt="bgpicture">
+    </picture>
+
+    <div class="cardFrontHolder">
+      <picture>
+        <img class="card-front" src="images\card-logo.svg" alt="front-card">
+      </picture>
+
+      <h1 class="cardNumber">0000 0000 0000 0000</h1>
+      <h2 class="nameOnCard">Jane Appleseed</h2>
+      <h2 class="ExpiDate"><span class="displayMM">00</span><span>/</span><span class="displayYY">00</span></h2>
+
+    </div>
+  </section>
+
+  <section class="cardBackHolder" role="Card-back-holder">
+    <picture>
+      <img class="card-back" src="images\bg-card-back.png" alt="back-card">
+    </picture>
+    <p class="displayCVC">000</p>
+
+  </section>
+  
+  <section class="PaymentInformation" role="PaymentInformation">
+    
+    <p>Cardholder Name</p>
+    <input class="cardName" placeholder="e.g. Jane Appleseed" type="text"><br><br>
+
+    <p>Card Number</p>
+    <input class="inputCardNumber" placeholder="1234 5678 9123 0000" type="text" required maxlength="19"><br><br>
+  
+    <h3>Exp. Date (MM/YY)</h3>
+    <h3>CVC</h3><br><br>
+    <input class="MM" 
+      placeholder="MM" 
+      type="text"  
+      maxlength="2">
+
+    <input class="YY" placeholder="YY" type="text"required maxlength="2">
+    
+    <input class="CVC" placeholder=" e.g. 123" type="text" required maxlength="3"><br>
+
+    <button class="submit">Confirm</button>
+
+  </section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
