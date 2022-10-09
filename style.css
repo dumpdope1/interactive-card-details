@@ -3,14 +3,13 @@ Body {
   border: 0;
   padding: 0;
   margin: 0;
-  align-content: center;
+   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main {
   align-content: center;
   size-adjust: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .bgpicture {
