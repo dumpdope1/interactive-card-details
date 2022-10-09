@@ -20,9 +20,10 @@ Body {
 main {
    align-content: center;
    size-adjust: auto;
-   overflow-x: hidden;
-   overflow-y: hidden;
+
 }
+
+
 // START OF FRON CARD CODE
 
 .bgpicture {
@@ -31,6 +32,9 @@ main {
 
 .bgholder {
    width: 46.875rem;
+}
+.PaymentInformation .CVClabel {
+   padding: 0 0 0px 90px;
 }
 .cardFrontHolder {
    background-image: url(images/bg-card-front.png);
@@ -95,6 +99,34 @@ main {
    bottom: 50.25rem;
    left: 59.375rem;
    padding: 20px;
+   visibility: visible;
+}
+.sucessfulConfirmation {
+   display: none;
+   position: absolute;
+   width: 500px;
+   height: 250px;
+   top: 230px;
+   left: 910px;
+}
+.sucessfulConfirmation div {
+   text-align: center;
+   position: relative;
+   top: 60px;
+}
+.sucessfulConfirmation h2 {
+   opacity: 0.5;
+   font-size: 18px;
+   font-weight: 500;
+}
+.sucessfulConfirmation h1 {
+   letter-spacing: 5px;
+   font-weight: 500;
+}
+.sucessfulConfirmation .complete-icon {
+   position: relative;
+   top: 30px;
+   left: 200px;
 }
 
 input {
@@ -140,7 +172,7 @@ input:hover {
 }
 .submit {
    background: linear-gradient(to right,hsl(249, 99%, 64%), hsl(278, 94%, 30%));
-   width: 180px;
+   width: 380px;
    height: 50px;
    border-radius: 10px;
    margin-top: 45px;
@@ -150,6 +182,11 @@ input:hover {
    font-size: 17px;
    letter-spacing: 1.5px;
    border: none;
+}
+.btnContainer {
+   position: absolute;
+   bottom: 380px;
+   left: 970px;
 }
 // END OF BACK CARD CODE
 
@@ -230,6 +267,9 @@ input:hover {
       font-size: 17px;
       letter-spacing: 1.5px;
       border: none;
+      position: absolute;
+      top: 680px;
+      left: 30px;
    }
    .CVC {
       width: 100px;
