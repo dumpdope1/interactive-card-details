@@ -47,7 +47,7 @@ inputCardNumber.addEventListener('input', function (e) {
  });
 
 $(document).ready(function () {
-   $('.submit',);
+   $('.sucessfulConfirmation').hide;
 })
 
 $('.submit').on('click', function () {
