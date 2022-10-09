@@ -1,302 +1,314 @@
+// START OF VARIABLE DECLARATION
+$Weights: 500;
+$Font: 'Space Grotesk', sans-serif;
+$NeutralWhite: hsl(0, 0%, 100%);
+$NeutralLighGrayishViolet: hsl(270, 3%, 87%);
+$NeutralDarkGrayishViolet:hsl(279, 6%, 55%);
+$NeutralVeryDarkViolet: hsl(278, 68%, 11%);
+$PrimaryLinearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+$PrimaryRed: hsl(0, 100%, 66%); //Input errors
+
 Body {
-  font-family: "Space Grotesk", sans-serif;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+   font-family: $Font;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 main {
-  align-content: center;
-  size-adjust: auto;
+   align-content: center;
+   size-adjust: auto;
+
 }
 
+
+// START OF FRON CARD CODE
+
 .bgpicture {
-  height: 100vh;
+   height: 100vh;
 }
 
 .bgholder {
-  width: 46.875rem;
+   width: 46.875rem;
 }
-
 .PaymentInformation .CVClabel {
-  padding: 0 0 0px 90px;
+   padding: 0 0 0px 90px;
 }
-
 .cardFrontHolder {
-  background-image: url(images/bg-card-front.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 28.125rem;
-  height: 15.625rem;
-  top: 9.375rem;
-  left: 12.5rem;
+   background-image: url(images/bg-card-front.png);
+   background-repeat: no-repeat;
+   position: absolute;
+   width: 28.125rem;
+   height: 15.625rem;
+   top: 9.375rem;
+   left: 12.5rem;
 }
 
 .cardFrontHolder img {
-  padding: 1.563rem;
+   padding: 1.563rem;
 }
-
 .cardFrontHolder h1 {
-  position: relative;
-  top: 0.625rem;
-  color: hsl(0deg, 0%, 100%);
-  letter-spacing: 0.219rem;
-  font-weight: 500;
-  font-size: 1.75rem;
-  padding-left: 1.875rem;
+   position: relative;
+   top: 0.625rem;
+   color: $NeutralWhite;
+   letter-spacing: 0.219rem;
+   font-weight: 500;
+   font-size: 1.75rem;
+   padding-left: 1.875rem;
 }
 
 .cardFrontHolder h2 {
-  display: inline;
-  font-weight: 300;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1rem;
-  text-transform: uppercase;
-  padding-left: 1.875rem;
-  position: relative;
-  letter-spacing: 0.125rem;
-  top: 1.25rem;
+   display: inline;
+   font-weight: 300;
+   color: $NeutralWhite;
+   font-size: 1rem;
+   text-transform: uppercase;
+   padding-left: 1.875rem;
+   position: relative;
+   letter-spacing: 0.125rem;
+   top: 1.25rem;
 }
 
 .ExpiDate {
-  position: relative;
-  left: 9.375rem;
+   position: relative;
+   left: 9.375rem;
 }
-
+// END OF FRONT CARD CODE
+// START OF BACK CARD CODE
 .cardBackHolder {
-  position: absolute;
-  width: 28.125rem;
-  height: 15.625rem;
-  top: 26.875rem;
-  left: 18.438rem;
+   position: absolute;
+   width: 28.125rem;
+   height: 15.625rem;
+   top: 26.875rem;
+   left: 18.438rem;  
 }
-
 .cardBackHolder p {
-  position: relative;
-  bottom: 10rem;
-  font-size: 1.125rem;
-  left: 21.875rem;
-  letter-spacing: 0.188rem;
-  color: hsl(0deg, 0%, 100%);
+   position: relative;
+   bottom: 10rem;
+   font-size: 1.125rem;
+   left: 21.875rem;
+   letter-spacing: 0.188rem;
+   color: $NeutralWhite;
 }
-
 .PaymentInformation {
-  width: 50rem;
-  height: 30rem;
-  position: relative;
-  bottom: 50.25rem;
-  left: 59.375rem;
-  padding: 20px;
+   width: 50rem;
+   height: 30rem;
+   position: relative;
+   bottom: 50.25rem;
+   left: 59.375rem;
+   padding: 20px;
 }
-
 .sucessfulConfirmation {
-  position: absolute;
-  width: 500px;
-  height: 250px;
-  top: 230px;
-  left: 910px;
+   position: absolute;
+   width: 500px;
+   height: 250px;
+   top: 230px;
+   left: 910px;
 }
-
 .sucessfulConfirmation div {
-  text-align: center;
-  position: relative;
-  top: 60px;
+   text-align: center;
+   position: relative;
+   top: 60px;
 }
-
 .sucessfulConfirmation h2 {
-  opacity: 0.5;
-  font-size: 18px;
-  font-weight: 500;
+   opacity: 0.5;
+   font-size: 18px;
+   font-weight: 500;
 }
-
 .sucessfulConfirmation h1 {
-  letter-spacing: 5px;
-  font-weight: 500;
+   letter-spacing: 5px;
+   font-weight: 500;
 }
-
 .sucessfulConfirmation .complete-icon {
-  position: relative;
-  top: 30px;
-  left: 200px;
+   position: relative;
+   top: 30px;
+   left: 200px;
 }
 
 input {
-  height: 30px;
-  width: 380px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 13px;
-  border-radius: 10px;
-  letter-spacing: 3px;
-  padding: 5px;
-  border-width: thin;
-  pointer-events: fill;
+   height: 30px;
+   width: 380px;
+   font-family: $Font;
+   font-size: 13px;
+   border-radius: 10px;
+   letter-spacing: 3px;
+   padding: 5px;
+   border-width: thin;
+   pointer-events: fill;
 }
-
 input:hover {
-  border-color: hsl(278deg, 94%, 30%);
+   border-color: hsl(278, 94%, 30%);
 }
 
 .PaymentInformation p {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 2.5px;
-  color: hsl(278deg, 94%, 30%);
-  opacity: 0.5;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: 500;
+   letter-spacing: 2.5px;
+   color: hsl(278, 94%, 30%);
+   opacity: 0.5;
 }
 
 .PaymentInformation h3 {
-  display: inline;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 2.5px;
-  color: hsl(278deg, 94%, 30%);
-  opacity: 0.5;
+   display: inline;
+   font-size: 13px;
+   font-weight: 500;
+   letter-spacing: 2.5px;
+   color: hsl(278, 94%, 30%);
+   opacity: 0.5;
 }
-
 .MM, .YY {
-  width: 80px;
+   width: 80px;
 }
-
 .CVC {
-  width: 160px;
+   width: 160px;
 }
-
 .inlineCVC {
-  display: inline;
+   display: inline;
 }
-
 .submit {
-  background: linear-gradient(to right, hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
-  width: 380px;
-  height: 50px;
-  border-radius: 10px;
-  margin-top: 45px;
-  color: hsl(0deg, 0%, 100%);
-  font-weight: 500;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 17px;
-  letter-spacing: 1.5px;
-  border: none;
+   background: linear-gradient(to right,hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+   width: 380px;
+   height: 50px;
+   border-radius: 10px;
+   margin-top: 45px;
+   color: $NeutralWhite;
+   font-weight: 500;
+   font-family: $Font;
+   font-size: 17px;
+   letter-spacing: 1.5px;
+   border: none;
 }
-
 .btnContainer {
-  position: absolute;
-  bottom: 380px;
-  left: 970px;
+   position: absolute;
+   bottom: 380px;
+   left: 970px;
 }
+// END OF BACK CARD CODE
+
+// START OF MEDIA QUERIES
 
 @media screen and (max-width: 780px) {
-  body {
-    width: auto;
-    height: auto;
-  }
-  .bgpicture {
-    height: 250px;
-    width: 100%;
-  }
-  .bgholder {
-    width: 100%;
-    height: 100px;
-  }
-  picture .card-front {
-    width: 60px;
-    height: 30px;
-  }
-  .cardFrontHolder {
-    position: relative;
-    width: 280px;
-    height: 150px;
-    top: -110px;
-    left: 10px;
-    border-radius: 8px;
-    z-index: 3;
-  }
-  .cardBackHolder {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    top: -40px;
-    left: 35px;
-    z-index: 2;
-  }
-  picture .card-back {
-    width: 280px;
-    height: 150px;
-  }
-  .PaymentInformation {
-    width: 330px;
-    height: 500px;
-    position: relative;
-    padding: 20px;
-    bottom: -500px;
-    left: 10px;
-    top: 60px;
-  }
-  input {
-    height: 25px;
-    width: 250px;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 13px;
-    border-radius: 10px;
-    letter-spacing: 3px;
-    padding: 10px;
-    border-width: thin;
-    pointer-events: fill;
-  }
-  .submit {
-    background: linear-gradient(to right, hsl(249deg, 99%, 64%), hsl(278deg, 94%, 30%));
-    width: 280px;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 45px;
-    color: hsl(0deg, 0%, 100%);
-    font-weight: 500;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 17px;
-    letter-spacing: 1.5px;
-    border: none;
-    position: absolute;
-    top: 680px;
-    left: 30px;
-  }
-  .CVC {
-    width: 100px;
-  }
-  .MM, .YY {
-    width: 50px;
-  }
-  .cardFrontHolder h1 {
-    position: relative;
-    top: -10px;
-    color: hsl(0deg, 0%, 100%);
-    letter-spacing: 0.219rem;
-    font-weight: 500;
-    font-size: 15px;
-    padding-left: 1.875rem;
-  }
-  .cardFrontHolder h2 {
-    display: inline;
-    font-weight: 300;
-    color: hsl(0deg, 0%, 100%);
-    font-size: 12px;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 0.125rem;
-    top: -10px;
-  }
-  .ExpiDate {
-    position: relative;
-    left: 25px;
-  }
-  .cardBackHolder p {
-    position: relative;
-    font-size: 0.8rem;
-    letter-spacing: 0.188rem;
-    color: hsl(0deg, 0%, 100%);
-    left: 215px;
-    top: -103px;
-  }
-}/*# sourceMappingURL=style.css.map */
+   body {
+      width: auto;
+      height: auto;
+
+   }
+
+   .bgpicture {
+      height: 250px;
+      width: 100%;
+   }
+   
+   .bgholder {
+      width: 100%;
+      height: 100px;
+   }
+   picture .card-front {
+      width: 60px;
+      height: 30px;
+   }
+   .cardFrontHolder {
+      position: relative;
+      width: 280px;
+      height: 150px;
+      top: -110px;
+      left: 10px;
+      border-radius: 8px;
+      z-index: 3;
+ }
+
+   .cardBackHolder {
+      position: relative;
+      height: 150px; 
+      width: 150px;
+      top: -40px;
+      left: 35px;
+      z-index: 2;
+   }
+   picture .card-back {
+      width: 280px;
+      height: 150px;
+   }
+   .PaymentInformation {
+      width: 330px;
+      height: 500px;
+      position: relative;
+      padding: 20px;
+      bottom: -500px;
+      left: 10px;
+      top: 60px;
+   }
+
+   input {
+      height: 25px;
+      width: 250px;
+      font-family: $Font;
+      font-size: 13px;
+      border-radius: 10px;
+      letter-spacing: 3px;
+      padding: 10px;
+      border-width: thin;
+      pointer-events: fill;
+   }
+   .submit {
+      background: linear-gradient(to right,hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+      width: 280px;
+      height: 50px;
+      border-radius: 10px;
+      margin-top: 45px;
+      color: $NeutralWhite;
+      font-weight: 500;
+      font-family: $Font;
+      font-size: 17px;
+      letter-spacing: 1.5px;
+      border: none;
+   }
+   .btnContainer {
+      position: absolute;
+      top: 680px;
+      left: 30px;
+   }
+   .CVC {
+      width: 100px;
+   }
+   .MM, .YY {
+      width: 50px;
+   }
+   .cardFrontHolder h1 {
+      position: relative;
+      top: -10px;
+      color: $NeutralWhite;
+      letter-spacing: 0.219rem;
+      font-weight: 500;
+      font-size: 15px;
+      padding-left: 1.875rem;
+   }
+   
+   .cardFrontHolder h2 {
+      display: inline;
+      font-weight: 300;
+      color: $NeutralWhite;
+      font-size: 12px;
+      text-transform: uppercase;
+      position: relative;
+      letter-spacing: 0.125rem;
+      top: -10px;
+   }
+   .ExpiDate {
+      position: relative;
+      left: 25px;
+   }
+   .cardBackHolder p {
+      position: relative;
+      font-size: 0.8rem;
+      letter-spacing: 0.188rem;
+      color: $NeutralWhite;
+      left: 215px;
+      top: -103px;
+   }
+}
