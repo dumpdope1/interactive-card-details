@@ -15,6 +15,8 @@ Body {
    margin: 0;
    width: 100vw;
    height: 100vh;
+   overflow-y: hidden;
+   overflow-x: hidden;
 }
 
 main {
@@ -99,10 +101,8 @@ main {
    bottom: 50.25rem;
    left: 59.375rem;
    padding: 20px;
-   visibility: visible;
 }
 .sucessfulConfirmation {
-   display: none;
    position: absolute;
    width: 500px;
    height: 250px;
@@ -267,6 +267,8 @@ input:hover {
       font-size: 17px;
       letter-spacing: 1.5px;
       border: none;
+   }
+   .btnContainer {
       position: absolute;
       top: 680px;
       left: 30px;
